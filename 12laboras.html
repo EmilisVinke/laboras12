@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+<form name="forma" onsubmit="getFormData(event)">
+    <p>Insert data:</p><br>
+    <p>Name: <input type="text" name="name" id="name" pattern="[A-Za-zÀ-ÖØ-öø-ÿĀ-ž]+" title="Please enter only letters" required></p>
+    <p>Surname: <input type="text" name="surename" id="surename" pattern="[A-Za-zÀ-ÖØ-öø-ÿĀ-ž]+" title="Please enter only letters" required></p>
+    <p>Numbers: <input type="number" name="number" id="number1" min="1" max="10" required><input type="number" name="number" id="number2" min="1" max="10" required></p>
+    <p><input type="submit" value="Calculate"></p>
+    <p>Numbers should range from 1 to 10</p>
+</form>
+
+<p id="vardas1"></p>
+<p id="pavarde1"></p>
+<p id="skaicius11"></p>
+<p id="skaicius12"></p>
+<p id="sudetasSkaicius"><p id="romSk"></p></p>
+
+<script src="12JS.js"></script>
+</body>
+
+</html>
